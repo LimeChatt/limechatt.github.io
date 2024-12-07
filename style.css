@@ -41,6 +41,8 @@ h6, h6 a {
 #messageElement {
     margin: 10px;
 
+    overflow: auto;
+
     background-color: rgb(228, 228, 228);
     padding: 3px 0px 3px 10px;
     border-radius: 10px;
@@ -176,4 +178,27 @@ a:not(.untrusted-site):not(#buyMeACoffee)::after {
 
 #buyMeACoffee img {
     width: 20px;
+}
+
+.embed {
+    background-color: #cacaca;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.embed div {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.embed div h5 {
+    display: flex;
+    text-align: center;
+    margin: auto;
 }
