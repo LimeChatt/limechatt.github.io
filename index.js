@@ -65,5 +65,12 @@ function createMessage(author, message, date = new Date('11/13/1987'), attachmen
     messageElement.prepend(messageContent)
     messageElement.prepend(titleHandler)
 
+    if(attachmentURI) {
+        const attachment = document.createElement('img')
+        attachment.id = 'messageAttachment'
+        attachment.src = attachmentURI
+        messageElement.appendChild(attachment)
+    }
+
     messageWall.prepend(messageElement)
 }
