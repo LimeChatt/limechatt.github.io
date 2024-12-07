@@ -1,0 +1,121 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    transition: all ease 0.5s;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 5%;
+}
+
+h6, h6 a {
+    color: rgba(0, 0, 0, 0.6)
+}
+
+#title img {
+    width: 45px;
+    margin: 5px;
+}
+
+#title {
+    width: auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+#messageWall {
+    overflow: auto;
+    padding: 10px;
+
+    border-style: solid;
+    border-color: rgb(63, 63, 63);
+
+    max-height: 250px;
+    border-radius: 10px;
+    background-color: rgb(201, 201, 201);
+}
+
+#messageElement {
+    margin: 10px;
+
+    background-color: rgb(228, 228, 228);
+    padding: 3px 0px 3px 10px;
+    border-radius: 10px;
+
+    border-color: rgb(73, 73, 73);
+    border-style: solid;
+    border-width: 2px;
+}
+
+#messageElement * {
+    text-align: left;
+}
+
+#titleHandler {
+    display: inline-flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+}
+
+#titleHandler * {
+    flex: 1;
+}
+
+input[type="text"] {
+    border-radius: 4px;
+    border-style: solid;
+    width: 150px;
+    height: 35px;
+}
+
+input[type="text"]:hover {
+    border-color: black;
+}
+
+input[type="file"] {
+    margin: auto;
+    display: flex;
+    gap: 20px;
+    text-align: center;
+}
+
+input[type="file"]::-webkit-file-upload-button {
+    border-radius: 4px;
+    border-style: solid;
+    width: 100px;
+    height: 35px;
+    cursor: pointer;
+}
+
+button[type="submit"] {
+    margin: 10px;
+    color: white;
+    background-color: royalblue;
+    border-style: none;
+    border-radius: 10px;
+    height: 30px;
+    width: 70px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: rgb(65, 105, 192);
+}
+
+strong {
+    font-weight: bolder;
+}
+
+#buyMeACoffee {
+    background-color: coral;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bolder;
+    text-decoration: none;
+    width: 100px;
+}
