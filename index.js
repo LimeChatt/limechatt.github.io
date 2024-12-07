@@ -35,6 +35,7 @@ sendBtn.addEventListener('click', () => {
     if(!(msgInput.value).trim()) return
     try {
         server.send(JSON.stringify({"type": "sendMessage", "content": msgInput.value, "author": authorInput.value ? authorInput.value : 'User', 'date': new Date()}))
+        msgInput.value = ''
     } catch(error) {
         alert(error)
     }
@@ -53,7 +54,7 @@ function createMessage(author, message, date = new Date('11/13/1987'), attachmen
     const dateTime = document.createElement('h6')
     const authorName = document.createElement('h4')
 
-    dateTime.textContent = date.toLocaleTimeString()
+    dateTime.textContent = date.toUTCString()
     authorName.textContent = author
     messageContent.innerHTML = message
 

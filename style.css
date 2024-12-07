@@ -3,6 +3,7 @@
     text-align: center;
     transition: all ease 0.5s;
     scroll-behavior: smooth;
+    font-weight: 600;
 }
 
 body {
@@ -10,7 +11,7 @@ body {
 }
 
 h6, h6 a {
-    color: rgba(0, 0, 0, 0.6)
+    color: rgba(0, 0, 0, 0.6) !important
 }
 
 #title img {
@@ -53,6 +54,12 @@ h6, h6 a {
     text-align: left;
 }
 
+#messageElement h5 p {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    line-height: 1.8;
+}
+
 #titleHandler {
     display: inline-flex;
     justify-content: space-evenly;
@@ -65,30 +72,31 @@ h6, h6 a {
     flex: 1;
 }
 
-input[type="text"] {
+#input-handler {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="text"], textarea {
     border-radius: 4px;
     border-style: solid;
     width: 150px;
     height: 35px;
+    border: solid gray 2px;
 }
 
-input[type="text"]:hover {
+input[type="text"]:hover, textarea:hover {
     border-color: black;
 }
 
-input[type="file"] {
-    margin: auto;
+textarea {
     display: flex;
-    gap: 20px;
+    vertical-align: middle;
+    align-items: center;
     text-align: center;
-}
-
-input[type="file"]::-webkit-file-upload-button {
-    border-radius: 4px;
-    border-style: solid;
-    width: 100px;
-    height: 35px;
-    cursor: pointer;
 }
 
 button[type="submit"] {
@@ -107,15 +115,48 @@ button[type="submit"]:hover {
 }
 
 strong {
-    font-weight: bolder;
+    font-weight: bolder !important;
 }
 
-code {
+code[class^='language-'] {
     font-family: monospace !important;
     color: white !important;
     background-color: #121212 !important;
     padding: 3px !important;
     border-radius: 5px !important;
+}
+
+.untrusted-site {
+    color: #dd6e6e;
+    text-decoration: none;
+}
+
+.untrusted-site::after {
+    content: ' (Untrusted ⚠)';
+    font-weight: 900;
+    color: #f89d48;
+}
+
+a:not(.untrusted-site):not(#buyMeACoffee) {
+    color: #98d839
+}
+
+a:not(.untrusted-site):not(#buyMeACoffee)::after {
+    content: ' (Trusted)';
+    font-weight: 900;
+}
+
+.spoilered {
+    font-family: Arial, Helvetica, sans-serif !important;
+    background-color: #cacaca !important;
+    color: transparent !important;
+    transition: none;
+    user-select: none;
+}
+
+.spoilered.show {
+    color: black !important;
+    user-select: initial;
 }
 
 #buyMeACoffee {
