@@ -118,7 +118,7 @@ strong {
     font-weight: bolder !important;
 }
 
-code[class^='language-'] {
+code[class^='language-']:not(.spoilered) {
     font-family: monospace !important;
     color: white !important;
     background-color: #121212 !important;
