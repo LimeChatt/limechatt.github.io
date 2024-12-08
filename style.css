@@ -139,11 +139,11 @@ code[class^='language-']:not(.spoilered) {
     color: #f89d48;
 }
 
-a:not(.untrusted-site):not(#buyMeACoffee) {
+a.trusted-site {
     color: #98d839
 }
 
-a:not(.untrusted-site):not(#buyMeACoffee)::after {
+a.trusted-site::after {
     content: ' (Trusted)';
     font-weight: 900;
 }
@@ -190,16 +190,34 @@ a:not(.untrusted-site):not(#buyMeACoffee)::after {
     text-align: center;
     align-items: center;
     justify-content: center;
+    gap: auto;
     
     position: relative;
     
     box-sizing: border-box;
     border-left: 10px solid yellowgreen;
+
+    box-shadow: 0px 0px 0px 3px gray;
 }
 
-.embed h5 {
+.embed h4, .embed h5 {
     display: flex;
     text-align: center;
     margin: auto;
     color: white !important;
+}
+
+.embed .embed-image {
+    max-width: 100px;
+    border-radius: 10px;
+}
+
+.embed .large-img {
+    max-width: 150px;
+}
+
+.embed * {
+    background-color: #b1b1b1;
+    padding: 4px;
+    border-radius: 3px;
 }
