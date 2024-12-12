@@ -110,6 +110,10 @@ strong {
     font-weight: bolder;
 }
 
+code {
+    font-family: monospace;
+}
+
 #buyMeACoffee {
     background-color: coral;
     color: white;
