@@ -114,6 +114,8 @@ code {
     font-family: monospace !important;
     color: white !important;
     background-color: #121212 !important;
+    padding: 3px !important;
+    border-radius: 5px !important;
 }
 
 #buyMeACoffee {
