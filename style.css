@@ -111,7 +111,7 @@ strong {
 }
 
 code {
-    font-family: monospace;
+    font-family: monospace !important;
 }
 
 #buyMeACoffee {
