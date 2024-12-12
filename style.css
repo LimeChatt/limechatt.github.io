@@ -112,6 +112,8 @@ strong {
 
 code {
     font-family: monospace !important;
+    color: white !important;
+    background-color: #121212 !important;
 }
 
 #buyMeACoffee {
