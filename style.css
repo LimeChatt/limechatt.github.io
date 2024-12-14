@@ -181,7 +181,7 @@ a:not(.untrusted-site):not(#buyMeACoffee)::after {
 }
 
 .embed {
-    background-color: #cacaca;
+    background-color: #a9a9a9;
     
     border-radius: 10px;
     padding: 10px;
