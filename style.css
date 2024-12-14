@@ -188,16 +188,32 @@ a:not(.untrusted-site):not(#buyMeACoffee)::after {
     text-align: center;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
-.embed div {
+.embed {
     display: flex;
     text-align: center;
     align-items: center;
     justify-content: center;
 }
 
-.embed div h5 {
+.embed::before {
+  content: '';
+  position: absolute;
+  
+  top: 0;
+  left: 0;
+  
+  width: 4px;
+  height: 100%;
+  
+  border-radius: 10px;
+  
+  background-color: yellow;
+}
+
+.embed h5 {
     display: flex;
     text-align: center;
     margin: auto;
