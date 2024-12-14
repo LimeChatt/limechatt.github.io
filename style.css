@@ -201,4 +201,5 @@ a:not(.untrusted-site):not(#buyMeACoffee)::after {
     display: flex;
     text-align: center;
     margin: auto;
+    color: white !important;
 }
