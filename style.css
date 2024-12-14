@@ -182,35 +182,19 @@ a:not(.untrusted-site):not(#buyMeACoffee)::after {
 
 .embed {
     background-color: #cacaca;
+    
     border-radius: 10px;
     padding: 10px;
+    
     display: flex;
     text-align: center;
     align-items: center;
     justify-content: center;
+    
     position: relative;
-}
-
-.embed {
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-}
-
-.embed::before {
-  content: '';
-  position: absolute;
-  
-  top: 0;
-  left: 0;
-  
-  width: 4px;
-  height: 100%;
-  
-  border-radius: 10px;
-  
-  background-color: yellow;
+    
+    box-sizing: border-box;
+    border-left: 10px solid yellowgreen;
 }
 
 .embed h5 {
